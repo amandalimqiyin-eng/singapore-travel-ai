@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Visibility &amp; Perception Report — Singapore as a Travel Destination</title>
+<meta name="robots" content="noindex, nofollow, noarchive">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js" onerror="this.onerror=null;document.write('<script src=&quot;https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js&quot;><\/script>')"></script>
+<style>
+:root {
+  --mw-teal: #28BBBB;
+  --mw-light-teal: #D6F4F4;
+  --mw-very-light-teal: #EFF9F9;
+  --mw-purple: #B627A1;
+  --mw-purple-light: #F0D4EC;
+  --mw-orange: #FF6221;
+  --mw-gold: #FFCC01;
+  --mw-black: #0A0A0A;
+  --mw-charcoal: #3C3C3C;
+  --mw-gray-50: #F9FAFB;
+  --mw-gray-100: #F5F7FA;
+  --mw-gray-200: #E5E7EB;
+  --mw-gray-500: #6B7280;
+  --mw-gray-900: #111827;
+  --mw-white: #FFFFFF;
+  --mw-positive: #10B981;
+  --mw-positive-light: #D1FAE5;
+  --mw-warning: #F59E0B;
+  --mw-warning-light: #FEF3C7;
+  --mw-negative: #EF4444;
+  --mw-negative-light: #FEE2E2;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+  --radius: 8px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; color: var(--mw-charcoal); background: var(--mw-gray-50); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.hero { background: linear-gradient(135deg, #28BBBB 0%, #6B3FA0 60%, #C84B9C 100%); color: #fff; padding: 56px 0 48px; }
+.hero-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
+.hero-logo { font-size: 20px; font-weight: 800; letter-spacing: -0.3px; opacity: 0.95; }
+.hero-logo span { font-weight: 400; opacity: 0.85; font-size: 14px; margin-left: 8px; }
+.hero-badge { background: rgba(255,255,255,0.25); padding: 6px 16px; border-radius: 20px; font-size: 13px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+.hero h1 { font-size: 36px; font-weight: 800; line-height: 1.2; margin-bottom: 12px; }
+.hero h2 { font-size: 18px; font-weight: 400; opacity: 0.85; max-width: 720px; }
+.hero-meta { margin-top: 24px; display: flex; gap: 24px; font-size: 14px; opacity: 0.9; flex-wrap: wrap; }
+@media (max-width: 768px) { .hero { padding: 36px 0 32px; } .hero h1 { font-size: 26px; } .hero h2 { font-size: 15px; } }
+.section { padding: 48px 0; }
+.section:nth-child(even) { background: var(--mw-white); }
+.section-label { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--mw-teal); margin-bottom: 8px; }
+.section-title { font-size: 24px; font-weight: 800; color: var(--mw-gray-900); margin-bottom: 6px; }
+.section-subtitle { font-size: 14px; color: var(--mw-gray-500); margin-bottom: 32px; }
+.pillar-banner { background: var(--mw-gray-900); color: #fff; padding: 28px 0; }
+.pillar-banner .container { display:flex; align-items:center; gap:16px; }
+.pillar-banner .num { font-size:13px; font-weight:800; letter-spacing:2px; color: var(--mw-teal); border:1px solid rgba(40,187,187,0.5); border-radius:20px; padding:6px 14px; }
+.pillar-banner h2 { font-size:22px; font-weight:800; }
+.pillar-banner p { font-size:13px; color:rgba(255,255,255,0.65); margin-top:2px; }
+.card { background: var(--mw-white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 28px; border-left: 2px solid var(--mw-light-teal); margin-bottom: 20px; }
+.card h3 { font-size: 17px; font-weight: 700; color: var(--mw-gray-900); margin-bottom: 12px; }
+.card p, .card li { font-size: 14px; line-height: 1.7; color: var(--mw-charcoal); }
+.card ul { padding-left: 18px; }
+.card ul li { margin-bottom: 6px; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(480px, 1fr)); gap: 20px; }
+@media (max-width: 768px) { .card-grid { grid-template-columns: 1fr; } }
+.theme-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:16px; }
+@media (max-width: 900px) { .theme-grid { grid-template-columns: 1fr; } }
+.theme-card { background:var(--mw-white); border-radius:var(--radius); box-shadow:var(--shadow-sm); padding:20px; border-top:3px solid var(--mw-teal); }
+.theme-card.warn { border-top-color: var(--mw-warning); }
+.theme-card.pos { border-top-color: var(--mw-positive); }
+.theme-card h4 { font-size:14px; font-weight:800; margin-bottom:8px; }
+.theme-card p { font-size:13px; color:var(--mw-charcoal); line-height:1.6; }
+.theme-card .freq { font-size:11px; color:var(--mw-gray-500); margin-top:8px; }
+table { width: 100%; border-collapse: collapse; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+thead th { background: #1A8F8F; color: #fff; padding: 14px 16px; font-size: 13px; font-weight: 700; text-align: left; letter-spacing: 0.3px; }
+tbody td { padding: 12px 16px; font-size: 14px; border-bottom: 1px solid var(--mw-gray-200); }
+tbody tr:nth-child(even) { background: var(--mw-gray-100); }
+tbody tr:hover { background: var(--mw-light-teal); }
+tr.hl-row td { background: var(--mw-very-light-teal) !important; font-weight: 700; color: #1A8F8F; }
+.exec-bullets { list-style: none; padding: 0; }
+.exec-bullets li { position: relative; padding: 16px 20px 16px 52px; background: var(--mw-white); border-radius: var(--radius); box-shadow: var(--shadow-sm); margin-bottom: 12px; font-size: 15px; line-height: 1.6; }
+.exec-bullets li::before { content: ''; position: absolute; left: 20px; top: 22px; width: 10px; height: 10px; border-radius: 50%; background: var(--mw-teal); }
+.exec-highlight { border-left: 2px solid var(--mw-purple-light); }
+.exec-highlight::before { background: var(--mw-purple) !important; }
+.exec-flag { border-left: 2px solid var(--mw-warning); }
+.exec-flag::before { background: var(--mw-warning) !important; }
+.chart-container { max-width: 560px; margin: 0 auto; padding: 16px; }
+.chart-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+@media (max-width: 768px) { .chart-wrapper { grid-template-columns: 1fr; } }
+.sentiment-row { display: flex; align-items: center; gap: 12px; margin-bottom: 4px; }
+.sentiment-label { width: 160px; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+.sentiment-bar-track { flex: 1; height: 28px; background: var(--mw-gray-200); border-radius: 14px; overflow: hidden; position: relative; }
+.sentiment-bar-fill { height: 100%; border-radius: 14px; display: flex; align-items: center; padding-left: 14px; font-size: 13px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px rgba(0,0,0,0.3); }
+.sentiment-score { width: 50px; text-align: right; font-size: 16px; font-weight: 800; flex-shrink: 0; }
+.sentiment-note { font-size: 13px; color: var(--mw-gray-500); margin-top: 0; margin-bottom: 8px; }
+.prompt-card { margin-bottom: 16px; }
+.prompt-header { background: var(--mw-white); border: 1px solid var(--mw-gray-200); border-radius: var(--radius); padding: 18px 24px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
+.prompt-header:hover { background: var(--mw-very-light-teal); }
+.prompt-header h3 { font-size: 15px; font-weight: 700; color: var(--mw-gray-900); margin: 0; }
+.prompt-header .arrow { font-size: 18px; color: var(--mw-gray-500); transition: transform 0.2s; }
+.prompt-body { display: block; background: var(--mw-white); border: 1px solid var(--mw-gray-200); border-top: none; border-radius: 0 0 var(--radius) var(--radius); padding: 0 24px; }
+.prompt-card.open .arrow { transform: rotate(180deg); }
+.llm-response { margin-bottom: 14px; }
+.llm-tag { display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 10px; border-radius: 12px; margin-bottom: 6px; }
+.llm-chatgpt { background: #E8F0FE; color: #1A73E8; }
+.llm-aimode { background: #FEF7E0; color: #EA8600; }
+.llm-aio { background: #FCE7D6; color: #C2410C; }
+.llm-deepseek { background: #EDE9FE; color: #7C3AED; }
+.llm-grok { background: #1F2937; color: #fff; }
+.llm-perplexity { background: #F0D4EC; color: #B627A1; }
+.llm-response p { font-size: 13px; line-height: 1.7; color: var(--mw-charcoal); }
+.opp-impact { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 13px; font-weight: 700; }
+.impact-high { background: var(--mw-negative-light); color: var(--mw-negative); }
+.impact-medium { background: var(--mw-warning-light); color: #B45309; }
+.method-box { background: var(--mw-very-light-teal); border: 1px solid var(--mw-light-teal); border-radius: var(--radius); padding: 28px; font-size: 14px; line-height: 1.8; color: var(--mw-charcoal); }
+.report-footer { background: var(--mw-gray-900); color: rgba(255,255,255,0.6); text-align: center; padding: 32px 0; font-size: 13px; }
+.report-footer strong { color: var(--mw-teal); font-weight: 700; }
+.score-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 36px; }
+@media (max-width: 768px) { .score-cards { grid-template-columns: repeat(2, 1fr); } }
+.score-card { background: var(--mw-white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 20px; text-align: center; }
+.score-card .bank-name { font-size: 13px; font-weight: 600; color: var(--mw-gray-500); margin-bottom: 6px; }
+.score-card .avg-score { font-size: 36px; font-weight: 800; }
+.score-card .rank { font-size: 12px; font-weight: 600; margin-top: 4px; }
+.score-card .rec-rate { font-size: 11px; color: var(--mw-gray-500); margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--mw-gray-200); }
+.score-card .rec-rate strong { color: var(--mw-gray-900); font-size: 14px; }
+.rank-1 { color: var(--mw-teal); }
+.rank-2 { color: #6B3FA0; }
+.rank-3 { color: var(--mw-orange); }
+.rank-4 { color: var(--mw-gray-500); }
+.callout { background: var(--mw-very-light-teal); border-left: 2px solid var(--mw-teal); border-radius: 0 var(--radius) var(--radius) 0; padding: 20px 24px; margin-top: 28px; font-size: 14px; line-height: 1.7; }
+.callout strong { color: var(--mw-teal); }
+.callout-purple { background: #F8F0F7; border-left-color: var(--mw-purple-light); }
+.callout-purple strong { color: var(--mw-purple); }
+.sov-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }
+@media (max-width: 900px) { .sov-grid { grid-template-columns: repeat(2, 1fr); } }
+.sov-card { background: var(--mw-white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 18px; text-align: center; }
+.sov-card h3 { font-size: 13px; font-weight: 700; color: var(--mw-gray-900); margin-bottom: 8px; }
+.sov-card canvas { max-width: 220px; margin: 0 auto; }
+.sov-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin-top: 20px; padding: 12px 0; }
+.sov-legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: var(--mw-gray-500); }
+.sov-legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 32px; }
+@media (max-width: 768px) { .kpi-row { grid-template-columns: repeat(2, 1fr); } }
+.kpi-card { background: var(--mw-white); border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 20px 16px; text-align: center; border-top: 3px solid var(--mw-teal); }
+.kpi-card .kpi-value { font-size: 32px; font-weight: 800; color: var(--mw-gray-900); }
+.kpi-card .kpi-label { font-size: 12px; color: var(--mw-gray-500); margin-top: 4px; }
+.kpi-card .kpi-delta { font-size: 13px; font-weight: 700; margin-top: 6px; }
+.kpi-up { color: var(--mw-positive); }
+.kpi-down { color: var(--mw-negative); }
+.kpi-neutral { color: var(--mw-gray-500); }
+:root { --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1); --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1); }
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.6s var(--ease-out-quart), transform 0.6s var(--ease-out-quart); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-stagger > * { opacity: 0; transform: translateY(16px); transition: opacity 0.5s var(--ease-out-quart), transform 0.5s var(--ease-out-quart); }
+.reveal-stagger.visible > * { opacity: 1; transform: translateY(0); }
+.reveal-stagger.visible > *:nth-child(1) { transition-delay: 0ms; }
+.reveal-stagger.visible > *:nth-child(2) { transition-delay: 80ms; }
+.reveal-stagger.visible > *:nth-child(3) { transition-delay: 160ms; }
+.reveal-stagger.visible > *:nth-child(4) { transition-delay: 240ms; }
+.hero .container > * { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease-out-expo), transform 0.7s var(--ease-out-expo); }
+.hero.loaded .container > * { opacity: 1; transform: translateY(0); }
+.hero.loaded .container > *:nth-child(1) { transition-delay: 100ms; }
+.hero.loaded .container > *:nth-child(2) { transition-delay: 200ms; }
+.hero.loaded .container > *:nth-child(3) { transition-delay: 350ms; }
+.hero.loaded .container > *:nth-child(4) { transition-delay: 500ms; }
+.card, .score-card, .kpi-card, .sov-card, .theme-card { transition: transform 0.2s var(--ease-out-quart), box-shadow 0.2s var(--ease-out-quart); }
+.card:hover, .score-card:hover, .kpi-card:hover, .sov-card:hover, .theme-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.1); }
+.sentiment-bar-fill { width: 0 !important; transition: width 0.8s var(--ease-out-expo) !important; }
+.sentiment-animated .sentiment-bar-fill { width: var(--target-width) !important; }
+.prompt-body { overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.4s var(--ease-out-quart), opacity 0.3s var(--ease-out-quart), padding 0.4s var(--ease-out-quart); padding-top: 0; padding-bottom: 0; }
+.prompt-card.open .prompt-body { max-height: 1600px; opacity: 1; padding-top: 20px; padding-bottom: 20px; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .reveal, .reveal-stagger > *, .hero .container > * { opacity: 1; transform: none; }
+  .sentiment-bar-fill { width: var(--target-width) !important; }
+}
+.sticky-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.95); backdrop-filter: blur(8px); border-bottom: 1px solid var(--mw-gray-200); padding: 0 24px; transform: translateY(-100%); transition: transform 0.3s ease; }
+.sticky-nav.visible { transform: translateY(0); }
+.sticky-nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; gap: 4px; height: 40px; overflow-x: auto; scrollbar-width: none; }
+.sticky-nav-inner::-webkit-scrollbar { display: none; }
+.sticky-nav a { font-size: 12px; font-weight: 600; color: var(--mw-gray-500); text-decoration: none; padding: 6px 10px; border-radius: 4px; white-space: nowrap; transition: background 0.15s, color 0.15s; }
+.sticky-nav a:hover { background: var(--mw-very-light-teal); color: var(--mw-teal); }
+.sticky-nav a.active { background: var(--mw-light-teal); color: #1A8F8F; }
+</style>
+</head>
+<body>
+
+<nav class="sticky-nav" id="stickyNav">
+  <div class="sticky-nav-inner">
+    <a href="#s01">Methodology</a>
+    <a href="#s02">Summary</a>
+    <a href="#s03">Entity Scorecard</a>
+    <a href="#s04">Mention Mix</a>
+    <a href="#s05">Model Presence</a>
+    <a href="#s06">Citation Authority</a>
+    <a href="#s07">Perception</a>
+    <a href="#s08">Narrative Ownership</a>
+    <a href="#s09">Channels</a>
+    <a href="#s10">Deep Dive</a>
+    <a href="#s11">Gaps</a>
+    <a href="#s12">Next Steps</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="container">
+    <div class="hero-top">
+      <div class="hero-logo">Meltwater <span>GenAI Lens</span></div>
+      <div class="hero-badge">Confidential</div>
+    </div>
+    <h1>AI Visibility &amp; Perception Report<br>Singapore as a Travel Destination</h1>
+    <h2>How Large Language Models Describe Singapore to Prospective Visitors — and Which Brands, Sites and Voices Currently Own That Conversation</h2>
+    <div class="hero-meta">
+      <span>7 Jun – 6 Jul 2026 (30 days)</span>
+      <span>Prompt folder: Tourism</span>
+      <span>No single tracked brand — destination-level study</span>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 01: METHODOLOGY -->
+<div class="section" id="s01">
+  <div class="container">
+    <div class="section-label">Section 01</div>
+    <div class="section-title">Methodology</div>
+    <div class="section-subtitle">How this analysis was conducted, and what each data source contributes</div>
+    <div class="method-box">
+      <p>This report draws on two layers of Meltwater GenAI Lens data, both covering the <strong>7 June – 6 July 2026</strong> window.</p>
+      <p style="margin-top:12px;"><strong>Layer 1 — prompt-level responses.</strong> Two prompts — <em>"best places to visit in singapore"</em> and <em>"singapore for holiday"</em> (folder: Tourism) — were run across <strong>5 AI models</strong> (ChatGPT/GPT-5, Deepseek, Google AI Mode, Google AI Overviews, Perplexity/Sonar), producing <strong>125 total responses</strong> (58 on "Visit Singapore," 67 on "Singapore as a destination"). Each response was enriched with sentiment, key phrases, named organisations/products, and cited links. This layer powers the perception, sentiment and prompt-level sections.</p>
+      <p style="margin-top:12px;"><strong>Layer 2 — broader entity tracking.</strong> A separate, wider entity-tracking view spanning the same Tourism folder supplies: a 10-entity visibility heatmap across 5 models, a 40-entity mentions/visibility/prevalence trend table with 15 bi-weekly snapshots, a ranked list of the top 100 cited sources, and a ranked list of the top 7 cited travel journalists/bylines. This layer is broader than the 2 sampled prompts and powers the narrative-ownership, entity-scorecard and channel sections.</p>
+      <p style="margin-top:12px;"><strong>No single brand is tracked as "primary"</strong> in either layer (every entity is flagged <code style="font-size:12px;background:var(--mw-gray-100);padding:2px 6px;border-radius:3px;">isPrimaryBrand: null/false</code>) — this is a destination-level perception and narrative-ownership study, not a single-client visibility audit. Findings should be read as "who is currently telling Singapore's tourism story," not as a scorecard against one brand's targets.</p>
+      <p style="margin-top:12px;">Point-in-time caveat: mention volume for every tracked entity is heavily front-loaded into the first two weeks of the window, tapering to near-zero for most entities after ~19 June with occasional isolated spikes. This most likely reflects tracking/collection cadence rather than a genuine decline in real-world online activity, and is noted where relevant rather than treated as a "declining interest" finding.</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 02: EXECUTIVE SUMMARY -->
+<div class="section" id="s02" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 02</div>
+    <div class="section-title">Executive Summary</div>
+    <div class="section-subtitle">Two separate stories: who currently owns the AI travel-planning conversation about Singapore, and how Singapore itself is described</div>
+
+    <div class="kpi-row">
+      <div class="kpi-card">
+        <div class="kpi-value">100%</div>
+        <div class="kpi-label">Responses rated positive or neutral (79% positive, 21% neutral)</div>
+        <div class="kpi-delta kpi-up">Zero negative sentiment across 125 responses</div>
+      </div>
+      <div class="kpi-card" style="border-top-color: var(--mw-purple);">
+        <div class="kpi-value">53%</div>
+        <div class="kpi-label">Responses mentioning Changi Airport / Jewel</div>
+        <div class="kpi-delta kpi-up">The arrival experience is part of the sales pitch</div>
+      </div>
+      <div class="kpi-card" style="border-top-color: var(--mw-teal);">
+        <div class="kpi-value">#3</div>
+        <div class="kpi-label">visitsingapore.com's rank of 100 cited sources (63 citations)</div>
+        <div class="kpi-delta kpi-down">But 0% cited on Deepseek &amp; Perplexity</div>
+      </div>
+      <div class="kpi-card" style="border-top-color: var(--mw-negative);">
+        <div class="kpi-value">0 / 1</div>
+        <div class="kpi-label">Singapore Airlines / Singapore Tourism Board named as an organisation, across 125 responses</div>
+        <div class="kpi-delta kpi-down">The two most obvious "official" brand names are nearly absent</div>
+      </div>
+    </div>
+
+    <ul class="exec-bullets">
+      <li><strong>Narrative ownership — Pillar 1:</strong> Third-party review sites, OTAs and travel agents are the fastest-growing named entities in the tracked set — Lonely Planet (+1,000% mentions), Trailfinders (+300%), MRT-related content (+450%), Tripadvisor (+85%) and Virgin Atlantic (+53%) — while Singapore's own official channel, visitsingapore.com, grew more modestly (+50% on a small base of 9) and Singapore Zoo mentions fell 31%.</li>
+      <li><strong>Narrative ownership — Pillar 1:</strong> visitsingapore.com's strong #3 overall citation rank is almost entirely a single-model phenomenon: ChatGPT cites it in 70% of responses, but Deepseek and Perplexity cite it in <strong>0%</strong> of theirs, and Google AI Mode/Overviews cite it in under 20%. On three of five models, the official site is effectively invisible.</li>
+      <li><strong>Narrative ownership — Pillar 1:</strong> Google's AI Mode and AI Overviews source from a visibly different ecosystem than the other three models — Virgin Atlantic, Tripadvisor, Trailfinders, House of Travel, YouTube and MRT-operator content all score 0 on Deepseek, GPT-5 and Perplexity/Sonar in the heatmap, yet score 7–50 on Google's two AI surfaces. Google's AI answers for Singapore travel queries currently run through a commercial travel-intermediary ecosystem that the other three models don't draw on at all.</li>
+      <li><strong>Narrative ownership — Pillar 1:</strong> Singapore Airlines is named zero times across all 125 responses, while a foreign carrier, Virgin Atlantic, is one of the fastest-growing named organisations in the set (11 mentions, +53%). The Singapore Tourism Board itself is named as an organisation in just 1 of 125 responses — its digital property performs well, but the institution's own name barely appears.</li>
+      <li class="exec-highlight"><strong>Perception — Pillar 2:</strong> Independent of any brand, AI models describe Singapore in uniformly positive terms — hawker food culture (40 key-phrase mentions), iconic attractions (Universal Studios Singapore named 59 times, Night Safari 42, S.E.A. Aquarium 33), and a "vibrant, multicultural city-state" narrative — with zero negative sentiment recorded across all 125 responses.</li>
+      <li class="exec-flag"><strong>Brand-confusion flag:</strong> visitsingapore.org — a similarly-named but unrelated third-party domain (registered to a "Travelindex network" travel-directory operator, not the Singapore Tourism Board) — is independently cited 5 times across the tracked set, a small but real source of potential visitor confusion with the genuine visitsingapore.com.</li>
+    </ul>
+
+    <div class="callout" style="margin-top:24px;">
+      <strong>Why this matters:</strong> AI models already tell a consistently positive, attraction-rich story about Singapore with no negative sentiment to overcome — the destination narrative itself needs no repair. The gap is entirely about ownership and routing: official channels and the national carrier are structurally under-named relative to review sites, OTAs and a foreign airline, and that gap is concentrated on specific models (Deepseek, Perplexity, Google's AI surfaces) rather than spread evenly.
+    </div>
+  </div>
+</div>
+
+<!-- PILLAR 1 BANNER -->
+<div class="pillar-banner">
+  <div class="container">
+    <div class="num">PILLAR 1</div>
+    <div>
+      <h2>Who owns the AI travel-planning conversation</h2>
+      <p>Which entities are named, cited and trending across AI models when people plan a Singapore trip</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 03: ENTITY VISIBILITY SCORECARD -->
+<div class="section" id="s03">
+  <div class="container">
+    <div class="section-label">Section 03</div>
+    <div class="section-title">Entity Visibility Scorecard</div>
+    <div class="section-subtitle">Top tracked entities by total mentions over the 30-day window, with trend deltas (Layer 2 — broader Tourism-folder tracking, 40 entities)</div>
+
+    <div class="score-cards">
+      <div class="score-card" style="border-top: 3px solid var(--mw-teal);">
+        <div class="bank-name">Tripadvisor</div>
+        <div class="avg-score rank-1">24</div>
+        <div class="rank rank-1">Total mentions</div>
+        <div class="rec-rate">Trend: <strong style="color:var(--mw-positive);">+85%</strong></div>
+      </div>
+      <div class="score-card" style="border-top: 3px solid #6B3FA0;">
+        <div class="bank-name">Virgin Atlantic</div>
+        <div class="avg-score rank-2">23</div>
+        <div class="rank rank-2">Total mentions</div>
+        <div class="rec-rate">Trend: <strong style="color:var(--mw-positive);">+53%</strong></div>
+      </div>
+      <div class="score-card" style="border-top: 3px solid var(--mw-orange);">
+        <div class="bank-name">ICA</div>
+        <div class="avg-score rank-3">13</div>
+        <div class="rank rank-3">Total mentions</div>
+        <div class="rec-rate">Trend: <strong>flat (0%)</strong></div>
+      </div>
+      <div class="score-card" style="border-top: 3px solid var(--mw-purple);">
+        <div class="bank-name">Trailfinders</div>
+        <div class="avg-score rank-4">12</div>
+        <div class="rank rank-4">Total mentions</div>
+        <div class="rec-rate">Trend: <strong style="color:var(--mw-positive);">+300%</strong></div>
+      </div>
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>Entity</th><th>Type</th><th>Total mentions</th><th>Mentions trend</th><th>Visibility score</th><th>Prevalence</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Tripadvisor</strong></td><td>Review platform</td><td>24</td><td style="color:var(--mw-positive);font-weight:700;">+85%</td><td>15</td><td>7</td></tr>
+          <tr><td><strong>Virgin Atlantic</strong></td><td>Airline (foreign carrier)</td><td>23</td><td style="color:var(--mw-positive);font-weight:700;">+53%</td><td>16</td><td>9</td></tr>
+          <tr><td><strong>ICA</strong></td><td>Gov — Immigration &amp; Checkpoints Authority</td><td>13</td><td>0%</td><td>14</td><td>6</td></tr>
+          <tr><td><strong>Trailfinders</strong></td><td>Travel agent</td><td>12</td><td style="color:var(--mw-positive);font-weight:700;">+300%</td><td>12</td><td>4</td></tr>
+          <tr><td><strong>Lonely Planet</strong></td><td>Travel media</td><td>11</td><td style="color:var(--mw-positive);font-weight:700;">+1,000%</td><td>11</td><td>3</td></tr>
+          <tr><td><strong>Marina Bay Sands</strong></td><td>Attraction</td><td>11</td><td style="color:var(--mw-negative);font-weight:700;">-15%</td><td>13</td><td>6</td></tr>
+          <tr><td><strong>MRT</strong></td><td>Gov/transit</td><td>11</td><td style="color:var(--mw-positive);font-weight:700;">+450%</td><td>9</td><td>6</td></tr>
+          <tr><td><strong>Singapore Zoo</strong></td><td>Attraction</td><td>9</td><td style="color:var(--mw-negative);font-weight:700;">-31%</td><td>10</td><td>6</td></tr>
+          <tr class="hl-row"><td><strong>visitsingapore.com</strong></td><td>Official — Singapore Tourism Board</td><td>9</td><td style="color:var(--mw-positive);font-weight:700;">+50%</td><td>9</td><td>2</td></tr>
+          <tr><td><strong>en.wikipedia.org</strong></td><td>Reference</td><td>8</td><td>0%</td><td>10</td><td>2</td></tr>
+          <tr><td><strong>House of Travel</strong></td><td>Travel agent</td><td>8</td><td>0%</td><td>9</td><td>4</td></tr>
+          <tr><td><strong>Expedia</strong></td><td>OTA</td><td>6</td><td style="color:var(--mw-negative);font-weight:700;">-67%</td><td>10</td><td>4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="chart-wrapper" style="margin-top:32px;">
+      <div class="chart-container">
+        <canvas id="radarChart"></canvas>
+      </div>
+      <div>
+        <div class="callout" style="margin-top:0;">
+          <strong>Reading the radar:</strong> Marina Bay Sands and ICA hold a broad, even presence across models — visible on Deepseek and GPT-5, not just Google's surfaces. Virgin Atlantic and Tripadvisor, by contrast, are entirely a Google AI Mode / AI Overviews phenomenon (0 on the other three models) — see Section 05 for the full per-model breakdown.
+        </div>
+      </div>
+    </div>
+
+    <canvas id="trendChart" height="90" style="margin-top:8px;"></canvas>
+    <div class="callout" style="margin-top:16px;">
+      <strong>Trend shape:</strong> All five plotted entities show the same front-loaded pattern — most mentions land in the first two weeks (7–19 June), then drop close to zero, with an isolated visitsingapore.com spike on 25 June and a handful of intermittent ICA spikes into early July. As noted in Section 01, this is more likely a tracking-cadence artefact than a genuine fall-off in real-world search or conversation volume.
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 04: MENTION MIX -->
+<div class="section" id="s04" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 04</div>
+    <div class="section-title">Mention Mix — Who Gets Named First</div>
+    <div class="section-subtitle">Category of the first-named organisation in each of the 125 prompt-level responses (Layer 1), by model</div>
+
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>Model</th><th>Gov/Official</th><th>Attractions</th><th>OTA/Agent/Airline</th><th>Media/Review/Blog</th><th>Food &amp; dining</th><th>Other</th><th>None named</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Deepseek</strong> (n=30)</td><td>3%</td><td>3%</td><td>0%</td><td>0%</td><td>20%</td><td>0%</td><td>73%</td></tr>
+          <tr><td><strong>ChatGPT</strong> (n=30)</td><td>27%</td><td>30%</td><td>0%</td><td>0%</td><td>0%</td><td>10%</td><td>33%</td></tr>
+          <tr><td><strong>Google AI Mode</strong> (n=24)</td><td>13%</td><td>17%</td><td>25%</td><td>8%</td><td>0%</td><td>17%</td><td>21%</td></tr>
+          <tr><td><strong>Perplexity</strong> (n=30)</td><td>0%</td><td>13%</td><td>7%</td><td>0%</td><td>0%</td><td>10%</td><td>70%</td></tr>
+          <tr><td><strong>Google AI Overviews</strong> (n=11)</td><td>18%</td><td>0%</td><td>36%</td><td>9%</td><td>9%</td><td>18%</td><td>9%</td></tr>
+          <tr class="hl-row"><td><strong>Overall</strong> (n=125)</td><td>11%</td><td>14%</td><td>10%</td><td>2%</td><td>6%</td><td>10%</td><td>47%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout-purple callout" style="margin-top:20px;">
+      <strong>Key Insight:</strong> Nearly half of all responses (47%) don't lead with a named organisation at all — they open by describing an attraction or experience generically ("the botanic gardens," "the zoo"). Where a model does lead with a named entity, Google AI Mode and Google AI Overviews are the only two where OTAs/travel agents/airlines win the opening mention more often than attractions or government sources (25% and 36% respectively) — on ChatGPT, Deepseek and Perplexity, that category barely registers.
+    </div>
+
+    <div class="callout" style="margin-top:20px;">
+      <strong>Model personality:</strong> ChatGPT is the most organisation-forward model (67% of responses lead with a named entity, split fairly evenly between government/official sources and attractions). Deepseek and Perplexity are the most generic — 70%+ of their responses name no organisation in the opening line at all, consistent with the descriptive, listicle-style answers both models give to this prompt pair.
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 05: MODEL PRESENCE -->
+<div class="section" id="s05">
+  <div class="container">
+    <div class="section-label">Section 05</div>
+    <div class="section-title">Entity Presence by Model</div>
+    <div class="section-subtitle">Visibility score (0–100) for the 5 heatmap-tracked entities with the widest model-to-model spread</div>
+
+    <div class="sov-grid">
+      <div class="sov-card"><h3>Deepseek</h3><canvas id="sovDeepseek"></canvas></div>
+      <div class="sov-card"><h3>GPT-5 / ChatGPT</h3><canvas id="sovGPT5"></canvas></div>
+      <div class="sov-card"><h3>Google AI Mode</h3><canvas id="sovAIMode"></canvas></div>
+      <div class="sov-card"><h3>Google AI Overviews</h3><canvas id="sovAIO"></canvas></div>
+      <div class="sov-card"><h3>Sonar / Perplexity</h3><canvas id="sovSonar"></canvas></div>
+    </div>
+
+    <div class="sov-legend">
+      <span class="sov-legend-item"><span class="sov-legend-dot" style="background:#28BBBB;"></span> Virgin Atlantic</span>
+      <span class="sov-legend-item"><span class="sov-legend-dot" style="background:#6B3FA0;"></span> Tripadvisor</span>
+      <span class="sov-legend-item"><span class="sov-legend-dot" style="background:#FF6221;"></span> Marina Bay Sands</span>
+      <span class="sov-legend-item"><span class="sov-legend-dot" style="background:#B627A1;"></span> ICA</span>
+      <span class="sov-legend-item"><span class="sov-legend-dot" style="background:#9CA3AF;"></span> Singapore Zoo</span>
+    </div>
+
+    <div class="callout" style="margin-top:24px;">
+      <strong>The Google-surface split, in one view:</strong> Virgin Atlantic and Tripadvisor score 0 on Deepseek and Sonar/Perplexity, and 0 or near-0 on GPT-5 — but 36–50 on Google AI Mode and 12–49 on Google AI Overviews. Marina Bay Sands and Singapore Zoo run the opposite pattern — present on Deepseek, GPT-5 and Sonar, largely absent from Google AI Overviews specifically. Two structurally different source ecosystems are operating side by side under the "AI visibility" umbrella.
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 06: CITATION & SOURCE AUTHORITY -->
+<div class="section" id="s06" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 06</div>
+    <div class="section-title">Citation &amp; Source Authority</div>
+    <div class="section-subtitle">Top cited sources across both prompts, and where visitsingapore.com's citation rate depends entirely on which model answers</div>
+
+    <div class="chart-wrapper">
+      <div>
+        <table>
+          <thead><tr><th>#</th><th>Source</th><th>Type</th><th>Citations</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>google.com</td><td>Other</td><td>220</td></tr>
+            <tr><td>2</td><td>youtube.com</td><td>Social</td><td>115</td></tr>
+            <tr class="hl-row"><td>3</td><td>visitsingapore.com</td><td>Official — Other</td><td>63</td></tr>
+            <tr><td>4</td><td>instagram.com</td><td>Social</td><td>51</td></tr>
+            <tr><td>5</td><td>facebook.com</td><td>Social</td><td>50</td></tr>
+            <tr><td>6</td><td>tripadvisor.com</td><td>Reviews</td><td>44</td></tr>
+            <tr><td>7</td><td>wikipedia.org</td><td>Wiki</td><td>44</td></tr>
+            <tr><td>8</td><td>expedia.com</td><td>Other (OTA)</td><td>37</td></tr>
+            <tr><td>9</td><td>neverendingvoyage.com</td><td>Other (blog)</td><td>37</td></tr>
+            <tr><td>10</td><td>handluggageonly.co.uk</td><td>News (blog)</td><td>34</td></tr>
+            <tr><td>15</td><td>ica.gov.sg</td><td>News — Gov</td><td>22</td></tr>
+            <tr><td>16</td><td>virginatlantic.com</td><td>News (airline)</td><td>22</td></tr>
+            <tr><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td><td>&hellip;</td></tr>
+            <tr><td>74</td><td>visitsingapore.org <em style="font-weight:400;color:var(--mw-negative);">(unrelated third party)</em></td><td>Other</td><td>5</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <canvas id="gapChart" height="280"></canvas>
+        <div class="callout-purple callout" style="margin-top:16px;">
+          <strong>The Mention-Citation Gap:</strong> ChatGPT cites visitsingapore.com in 70% of its responses — the entire reason the domain ranks #3 overall. Deepseek and Perplexity cite it in 0% of theirs (Deepseek cites no links at all, ever — 0 of 30 responses). Google AI Mode and AI Overviews cite it in just 8% and 18%. Four of five models are, in practice, not routing to Singapore's official tourism site.
+        </div>
+      </div>
+    </div>
+
+    <div class="callout" style="margin-top:24px;">
+      <strong>A genuine brand-confusion risk:</strong> visitsingapore.org — ranked #74 with 5 citations — is registered to an unrelated third-party travel-directory operator ("Travelindex network"), not the Singapore Tourism Board. It is similar enough to the genuine visitsingapore.com to plausibly confuse both AI models and end users who click through from a citation.
+    </div>
+
+    <h3 style="font-size:18px;font-weight:800;margin:36px 0 16px;">Who's writing about this conversation — top cited travel bylines</h3>
+    <p style="font-size:14px;color:var(--mw-gray-500);margin-bottom:16px;max-width:760px;">Of the bylined content cited across the tracked Tourism-folder conversation, 7 named journalists/creators were identified. Independent travel bloggers and licensed guides outperform traditional travel-media staff bylines.</p>
+    <div style="overflow-x:auto;">
+      <table>
+        <thead><tr><th>#</th><th>Name</th><th>Title</th><th>Outlet</th><th>Location</th><th>Mentions</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Lauren Juliff</td><td>Travel Blogger</td><td>Independent</td><td>US</td><td>15 (100%)</td></tr>
+          <tr><td>2</td><td>Jaclynn Seah</td><td>Licensed Tour Guide</td><td>Independent</td><td>Singapore</td><td>10 (67%)</td></tr>
+          <tr><td>3</td><td>Ria de Jong</td><td>Writer</td><td>Lonely Planet</td><td>US</td><td>2 (13%)</td></tr>
+          <tr><td>4</td><td>Julian Manning</td><td>Freelance Journalist</td><td>Independent</td><td>India</td><td>1 (7%)</td></tr>
+          <tr><td>5</td><td>Audrey Phoon</td><td>Editor-in-Chief</td><td>Eastside</td><td>Singapore</td><td>1 (7%)</td></tr>
+          <tr><td>6</td><td>Jamie Wong</td><td>Writer</td><td>The Peak Singapore</td><td>Singapore</td><td>1 (7%)</td></tr>
+          <tr><td>7</td><td>Rachel Tan</td><td>—</td><td>WGSN</td><td>UK</td><td>1 (7%)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout" style="margin-top:16px;">
+      <strong>Reading this carefully:</strong> Lauren Juliff (independent travel blogger) and Jaclynn Seah (Singapore-based licensed tour guide) together account for 25 of the 31 total byline citations tracked — far ahead of Lonely Planet's own staff writer. AI models currently reach for independent, experience-led travel-blogger content on Singapore ahead of traditional travel-media or government voices.
+    </div>
+  </div>
+</div>
+
+<!-- PILLAR 2 BANNER -->
+<div class="pillar-banner" style="background:linear-gradient(120deg,#1F2937,#3C2A4D);">
+  <div class="container">
+    <div class="num" style="color:var(--mw-purple); border-color:rgba(182,39,161,0.5);">PILLAR 2</div>
+    <div>
+      <h2>Perception of Singapore as a destination</h2>
+      <p>How AI models describe Singapore itself, independent of which entity is cited</p>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 07: PERCEPTION -->
+<div class="section" id="s07">
+  <div class="container">
+    <div class="section-label">Section 07</div>
+    <div class="section-title">Perception of Singapore as a Destination</div>
+    <div class="section-subtitle">Sentiment across 125 responses to "best places to visit in singapore" and "singapore for holiday"</div>
+
+    <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+      <div>
+        <div class="sentiment-row">
+          <div class="sentiment-label">Deepseek</div>
+          <div class="sentiment-bar-track"><div class="sentiment-bar-fill" style="width:93%;background:var(--mw-positive);">93%</div></div>
+          <div class="sentiment-score" style="color:var(--mw-positive);">28/30</div>
+        </div>
+        <div style="margin-left:172px;margin-bottom:12px;"><span class="sentiment-note">Most consistently positive — reasons through a curated highlight-reel of attractions before answering</span></div>
+
+        <div class="sentiment-row">
+          <div class="sentiment-label">Google AI Mode</div>
+          <div class="sentiment-bar-track"><div class="sentiment-bar-fill" style="width:83%;background:var(--mw-positive);">83%</div></div>
+          <div class="sentiment-score" style="color:var(--mw-positive);">20/24</div>
+        </div>
+        <div style="margin-left:172px;margin-bottom:12px;"><span class="sentiment-note">Search-style snippets built around top attractions and practical logistics</span></div>
+
+        <div class="sentiment-row">
+          <div class="sentiment-label">Google AI Overviews</div>
+          <div class="sentiment-bar-track"><div class="sentiment-bar-fill" style="width:91%;background:var(--mw-positive);">91%</div></div>
+          <div class="sentiment-score" style="color:var(--mw-positive);">10/11</div>
+        </div>
+        <div style="margin-left:172px;margin-bottom:12px;"><span class="sentiment-note">Fewest responses of the five models, but almost uniformly enthusiastic in tone</span></div>
+
+        <div class="sentiment-row">
+          <div class="sentiment-label">Perplexity</div>
+          <div class="sentiment-bar-track"><div class="sentiment-bar-fill" style="width:73%;background:var(--mw-teal);">73%</div></div>
+          <div class="sentiment-score" style="color:var(--mw-teal);">22/30</div>
+        </div>
+        <div style="margin-left:172px;margin-bottom:12px;"><span class="sentiment-note">Table- and citation-heavy responses; still positive, more matter-of-fact in tone</span></div>
+
+        <div class="sentiment-row">
+          <div class="sentiment-label">ChatGPT</div>
+          <div class="sentiment-bar-track"><div class="sentiment-bar-fill" style="width:63%;background:var(--mw-teal);">63%</div></div>
+          <div class="sentiment-score" style="color:var(--mw-teal);">19/30</div>
+        </div>
+        <div style="margin-left:172px;margin-bottom:12px;"><span class="sentiment-note">Most balanced/neutral in tone of the five — heavier on logistics and caveats alongside recommendations</span></div>
+      </div>
+
+      <div>
+        <canvas id="perceptionChart" height="280"></canvas>
+        <div class="callout" style="margin-top:16px;">
+          <strong>Zero negative sentiment:</strong> Across all 125 responses, sentiment splits 79% positive / 21% neutral — not a single negative classification, on either prompt, on any model. Singapore's destination narrative needs no repair; the open question is purely who gets credit for telling it.
+        </div>
+      </div>
+    </div>
+
+    <h3 style="font-size:18px;font-weight:800;margin:36px 0 16px;">Recurring perception themes</h3>
+    <div class="theme-grid">
+      <div class="theme-card pos">
+        <h4>✅ Hawker food culture</h4>
+        <p>"Food," "hawker centers/centres," "street food" and "great food" together appear in well over half of all responses — Singapore's food culture is the single most consistent descriptor across every model.</p>
+        <div class="freq">"Food" alone: 40 key-phrase mentions</div>
+      </div>
+      <div class="theme-card pos">
+        <h4>✅ A tight, repeatable attraction canon</h4>
+        <p>Universal Studios Singapore, Night Safari, S.E.A. Aquarium, Singapore Zoo, Cloud Forest and Marina Bay Sands are named so consistently across models that they function as a de facto canonical Singapore itinerary in AI answers.</p>
+        <div class="freq">Universal Studios Singapore: named 59 times</div>
+      </div>
+      <div class="theme-card pos">
+        <h4>✅ Changi as part of the pitch</h4>
+        <p>Changi Airport / Jewel is mentioned in over half of all responses — the arrival experience itself (Rain Vortex, Canopy Park) is treated as a destination highlight, not just a transit point.</p>
+        <div class="freq">Mentioned in 66/125 responses (53%)</div>
+      </div>
+      <div class="theme-card">
+        <h4>🌏 Multicultural heritage &amp; futuristic architecture</h4>
+        <p>Chinatown, Little India and Kampong Glam are consistently paired with "futuristic architecture" and "panoramic city views" — models frame Singapore as old-meets-new rather than picking one identity.</p>
+        <div class="freq">"Multicultural city-state": 13 mentions</div>
+      </div>
+      <div class="theme-card">
+        <h4>🗺️ UNESCO status as a trust signal</h4>
+        <p>The Botanic Gardens' UNESCO World Heritage status is invoked in roughly 1 in 10 responses as a credibility marker, alongside "rich cultural heritage" framing.</p>
+        <div class="freq">11 mentions</div>
+      </div>
+      <div class="theme-card warn">
+        <h4>⚠️ Budget/cost surfaces occasionally</h4>
+        <p>"Budget" appears in 10 responses — usually framed practically (attraction pass pricing, hawker food as an affordable option) rather than as a complaint about Singapore being expensive.</p>
+        <div class="freq">10 mentions, no negative sentiment attached</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 08: NARRATIVE OWNERSHIP -->
+<div class="section" id="s08" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 08</div>
+    <div class="section-title">Narrative Ownership — Who Tells Singapore's Travel Story</div>
+    <div class="section-subtitle">Top cited sources, ranked, with the official channel and the confusable look-alike domain marked</div>
+    <div class="chart-container" style="max-width:100%;">
+      <canvas id="narrativeChart"></canvas>
+    </div>
+    <div class="callout-purple callout" style="margin-top:20px;">
+      <strong>The gap:</strong> Once Google.com and YouTube (both largely infrastructural/aggregator citations) are set aside, visitsingapore.com is genuinely the top named-content source at 63 citations — ahead of Tripadvisor (44), Expedia (37) and a cluster of independent travel blogs (neverendingvoyage.com, handluggageonly.co.uk, theoccasionaltraveller.com, each 26–37). The official channel is winning the aggregate citation count; Section 06 shows that win is fragile because it depends on one model.
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 09: CHANNEL-BY-CHANNEL ANALYSIS -->
+<div class="section" id="s09">
+  <div class="container">
+    <div class="section-label">Section 09</div>
+    <div class="section-title">Channel-by-Channel Analysis</div>
+    <div class="section-subtitle">How each model handles official sources, third-party sources, and sentiment</div>
+
+    <div class="card-grid">
+      <div class="card" style="border-left-color:#7C3AED;">
+        <h3>Deepseek</h3>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Sentiment: 93% positive</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-negative-light);color:var(--mw-negative);">Any citation: 0%</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-negative-light);color:var(--mw-negative);">visitsingapore.com: 0%</span>
+        </div>
+        <ul>
+          <li>Most positive sentiment of any model and the most consistent attraction canon (Marina Bay Sands, Gardens by the Bay, Sentosa) — but answers entirely from parametric knowledge with zero cited links across all 30 responses.</li>
+          <li><strong>Key gap:</strong> Structurally uncitable — no amount of on-page optimisation earns a link here; this is a pure "does the model know about it" channel, not a "does it route traffic" channel.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left-color:#1A73E8;">
+        <h3>ChatGPT / GPT-5</h3>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-teal);color:#fff;">Sentiment: 63% positive</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Any citation: 97%</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">visitsingapore.com: 70%</span>
+        </div>
+        <ul>
+          <li>The one model where the official channel genuinely wins — cites visitsingapore.com in 7 of 10 responses, and leads with a named government/official or attraction entity in 57% of responses (Section 04).</li>
+          <li><strong>Key gap:</strong> Least positive-skewing sentiment of the five, though still zero negative — more logistics/caveat-heavy in tone than the other models.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left-color:#EA8600;">
+        <h3>Google AI Mode</h3>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Sentiment: 83% positive</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Any citation: 100%</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-negative-light);color:var(--mw-negative);">visitsingapore.com: 8%</span>
+        </div>
+        <ul>
+          <li>Draws most heavily on OTAs, review platforms and airlines (25% of opening mentions) of any model — Tripadvisor and Virgin Atlantic both score 36–50 on the visibility heatmap here, versus 0 everywhere except AI Overviews.</li>
+          <li><strong>Key gap:</strong> Cites something in every response, but rarely the official destination site — this is the highest-volume Google surface and the one where third-party travel intermediaries are most entrenched.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left-color:#C2410C;">
+        <h3>Google AI Overviews</h3>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Sentiment: 91% positive</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Any citation: 100%</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-warning-light);color:#B45309;">visitsingapore.com: 18%</span>
+        </div>
+        <ul>
+          <li>Smallest sample (11 of 125) but the highest opening-mention rate for OTAs/airlines/agents of any model (36%) — Virgin Atlantic alone scores 49 on this surface's visibility heatmap, its highest of any model.</li>
+          <li><strong>Key gap:</strong> Lowest volume overall in this window — worth a larger, dedicated sample before treating these percentages as stable.</li>
+        </ul>
+      </div>
+      <div class="card" style="border-left-color:#B627A1;">
+        <h3>Perplexity / Sonar</h3>
+        <div style="display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap;">
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-teal);color:#fff;">Sentiment: 73% positive</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-positive-light);color:var(--mw-positive);">Any citation: 70%</span>
+          <span style="font-size:13px;font-weight:700;padding:3px 10px;border-radius:12px;background:var(--mw-negative-light);color:var(--mw-negative);">visitsingapore.com: 0%</span>
+        </div>
+        <ul>
+          <li>Cites sources fairly often (70% of responses) but never the official destination site — leans on Reddit, Tripadvisor and independent blogs instead, and leads 70% of responses with no named organisation at all.</li>
+          <li><strong>Key gap:</strong> A citation-capable model that has simply never been given a reason to link visitsingapore.com — likely the highest-leverage, lowest-effort model to fix first alongside Deepseek's structural ceiling.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 10: PROMPT-LEVEL DEEP DIVE -->
+<div class="section" id="s10" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 10</div>
+    <div class="section-title">Prompt-Level Deep Dive</div>
+    <div class="section-subtitle">Both tracked prompts and how each model responds — click to expand</div>
+
+    <div class="prompt-card open" onclick="this.classList.toggle('open')">
+      <div class="prompt-header">
+        <h3>"best places to visit in singapore" <span style="font-weight:400;font-size:13px;color:var(--mw-gray-500);margin-left:8px;">58 responses — the attraction-listing prompt</span></h3>
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="prompt-body">
+        <div class="llm-response">
+          <span class="llm-tag llm-deepseek">Deepseek</span>
+          <p>Produces a near-identical structured list across responses — Marina Bay Sands &amp; SkyPark, Gardens by the Bay, Sentosa Island, Chinatown/Little India/Kampong Glam, Singapore Zoo &amp; Night Safari, Clarke Quay, Botanic Gardens, Jewel Changi Airport — reasoning through the list before answering, citing no sources.</p>
+        </div>
+        <div class="llm-response">
+          <span class="llm-tag llm-chatgpt">ChatGPT</span>
+          <p>Answers in a similar attraction-canon style but more often names visitsingapore.com or a specific attraction operator's own site as a supporting citation, and occasionally works in practical logistics (Singapore Tourist Pass, EZ-Link card).</p>
+        </div>
+        <div class="callout" style="margin-top:12px; margin-bottom:0; padding:14px 18px; font-size:13px;">
+          <strong>Takeaway:</strong> This prompt behaves like a stable, largely citation-optional "top 10" answer — the canon of attractions is settled across models; the opportunity is less about winning a new mention and more about which URL gets attached to each attraction already named.
+        </div>
+      </div>
+    </div>
+
+    <div class="prompt-card open" onclick="this.classList.toggle('open')">
+      <div class="prompt-header">
+        <h3>"singapore for holiday" <span style="font-weight:400;font-size:13px;color:var(--mw-gray-500);margin-left:8px;">67 responses — the higher-intent, more commercially contested prompt</span></h3>
+        <span class="arrow">&#9660;</span>
+      </div>
+      <div class="prompt-body">
+        <div class="llm-response">
+          <span class="llm-tag llm-aimode">Google AI Mode</span>
+          <p>Frequently surfaces booking-oriented results — flight options (Virgin Atlantic, Qantas), OTA package listings (Expedia, Trip.com, Klook), and Tripadvisor review snippets — reflecting the higher commercial intent of "for holiday" phrasing versus the more informational "best places to visit."</p>
+        </div>
+        <div class="llm-response">
+          <span class="llm-tag llm-perplexity">Perplexity</span>
+          <p>Leans on Reddit threads and independent blog roundups (neverendingfootsteps.com-style content) for practical "is it worth it / how many days" framing, rarely naming an official source.</p>
+        </div>
+        <div class="callout" style="margin-top:12px; margin-bottom:0; padding:14px 18px; font-size:13px;">
+          <strong>Why this prompt is more contested:</strong> "For holiday" reads as closer to purchase intent than "best places to visit" — this is where OTAs, airlines and travel agents concentrate their presence (12 of 12 organisation-category "OTA/Agent/Airline" first-mentions in the dataset came from this prompt), making it the more commercially important of the two to win.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 11: COMPETITIVE GAPS & OPPORTUNITIES -->
+<div class="section" id="s11">
+  <div class="container">
+    <div class="section-label">Section 11</div>
+    <div class="section-title">Competitive Gaps &amp; Opportunities</div>
+    <div class="section-subtitle">Strategic fixes to close the ownership gap on a narrative that is already positive</div>
+
+    <div class="callout" style="margin-top:0; margin-bottom:28px; border-left-color: var(--mw-purple); background: #F8F0F7;">
+      <strong style="color:var(--mw-purple);">Why this matters:</strong> Singapore does not need to fix how it's perceived — sentiment is uniformly positive with zero negative responses recorded. The opportunity is entirely about which brands and sites get credit for, and traffic from, a conversation that already favours the destination.
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table>
+        <thead>
+          <tr><th style="width:22%">Gap Identified</th><th style="width:10%">Impact</th><th style="width:40%">Recommended Action</th><th style="width:28%">Business Impact</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>visitsingapore.com's citation strength depends on one model</strong></td>
+            <td><span class="opp-impact impact-high">Critical</span></td>
+            <td>70% of the domain's citations come from ChatGPT alone; Deepseek and Perplexity cite it 0% of the time, and Google's two AI surfaces under 20%. Fix: add Organization/TouristAttraction/FAQ schema and ensure content freshness signals that citation-capable models beyond ChatGPT (Perplexity/Sonar in particular, since it already cites other sources 70% of the time) have a concrete reason to link the official domain instead of Reddit or third-party blogs.</td>
+            <td>The official site's aggregate #3 rank overstates its real reach — most AI-driven travellers on Deepseek or Perplexity never see it at all.</td>
+          </tr>
+          <tr>
+            <td><strong>Singapore Airlines and the Singapore Tourism Board are nearly absent by name</strong></td>
+            <td><span class="opp-impact impact-high">Critical</span></td>
+            <td>Singapore Airlines: 0 of 125 responses. Singapore Tourism Board: 1 of 125. Meanwhile Virgin Atlantic is a top-5 fastest-growing tracked entity. Fix: assess whether this reflects genuinely thin owned/earned content mentioning these two institutions by name for holiday-planning queries, and pursue placements (official guides, partner content, structured airline/booking data) that name them directly rather than only their digital properties.</td>
+            <td>The national carrier and the destination's own government body are structurally invisible in exactly the query type meant to route visitors toward them.</td>
+          </tr>
+          <tr>
+            <td><strong>Google AI Mode / AI Overviews run on a different source ecosystem</strong></td>
+            <td><span class="opp-impact impact-high">High</span></td>
+            <td>Virgin Atlantic, Tripadvisor, Trailfinders, House of Travel, YouTube and MRT-operator content score 0 on Deepseek, GPT-5 and Sonar but 7–50 on Google's two AI surfaces. Fix: treat Google AI Mode/Overviews as a distinct optimisation target — these surfaces reward the commercial travel-booking ecosystem (OTA listings, airline schedules, review aggregators), not general web authority.</td>
+            <td>A single "be more visible in AI" strategy will not work identically across all five models; Google's AI surfaces need their own content and partnership approach.</td>
+          </tr>
+          <tr>
+            <td><strong>visitsingapore.org creates brand-confusion risk</strong></td>
+            <td><span class="opp-impact impact-medium">Medium</span></td>
+            <td>An unrelated third-party domain with a near-identical name is independently cited 5 times. Fix: monitor this domain's growth and consider a clarifying note or outreach if citations increase, since AI models and users alike could conflate it with the genuine site.</td>
+            <td>Small today, but domain confusion compounds as more AI-driven traffic starts from a citation rather than a typed URL.</td>
+          </tr>
+          <tr>
+            <td><strong>"Singapore for holiday" is the more commercially contested prompt, and OTAs are winning it</strong></td>
+            <td><span class="opp-impact impact-medium">Medium</span></td>
+            <td>All 12 first-mention wins classified as "OTA/Agent/Airline" in the dataset came from the higher-intent "for holiday" prompt, not the informational "best places to visit" prompt. Fix: prioritise official/attraction content specifically for higher-intent, booking-adjacent query phrasing, where third parties currently have the advantage.</td>
+            <td>This is the prompt closest to an actual booking decision — it's also the one where official channels are weakest.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- SECTION 12: RECOMMENDED NEXT STEPS -->
+<div class="section" id="s12" style="background:var(--mw-white)">
+  <div class="container">
+    <div class="section-label">Section 12</div>
+    <div class="section-title">Recommended Next Steps</div>
+    <div class="section-subtitle">A phased approach — measurement first, then citation fixes, then a Google-specific play</div>
+
+    <div style="display:grid; grid-template-columns: 80px 1fr; gap: 0; margin-bottom: 32px;">
+
+      <div style="display:flex; flex-direction:column; align-items:center;">
+        <div style="width:48px; height:48px; border-radius:50%; background:var(--mw-teal); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:800;">1</div>
+        <div style="width:2px; flex:1; background:var(--mw-gray-200);"></div>
+      </div>
+      <div style="padding:8px 0 36px 12px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--mw-teal); margin-bottom:4px;">Now — Widen the Sample, Keep the Radar On</div>
+        <div style="font-size:17px; font-weight:800; color:var(--mw-gray-900); margin-bottom:10px;">Expand beyond 2 prompts and confirm the tracking-cadence pattern</div>
+        <div style="background:var(--mw-very-light-teal); border-radius:var(--radius); padding:20px; font-size:14px; line-height:1.8;">
+          Add more Tourism-folder prompts spanning different intents (itinerary planning, family travel, budget travel, specific-interest queries like food or nightlife) to separate prompt-specific effects from durable patterns. Confirm whether the front-loaded mention pattern in Section 03 reflects tracking cadence or a real seasonal shift, and set this broader set to track on a recurring schedule.
+          <div style="margin-top:12px; font-size:12px; color:var(--mw-gray-500);"><strong>Owner:</strong> Meltwater &amp; destination marketing team</div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; align-items:center;">
+        <div style="width:48px; height:48px; border-radius:50%; background:var(--mw-purple); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:800;">2</div>
+        <div style="width:2px; flex:1; background:var(--mw-gray-200);"></div>
+      </div>
+      <div style="padding:8px 0 36px 12px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--mw-purple); margin-bottom:4px;">Weeks 1–4 — Citation Fixes</div>
+        <div style="font-size:17px; font-weight:800; color:var(--mw-gray-900); margin-bottom:10px;">Make the official site citable beyond ChatGPT</div>
+        <div style="background:#F8F0F7; border-radius:var(--radius); padding:20px; font-size:14px; line-height:1.8;">
+          Add structured data (Organization, TouristAttraction, FAQ schema) to visitsingapore.com's core pages, focused on the "for holiday" query pattern where third parties currently dominate. Monitor visitsingapore.org for growth and consider clarifying outreach if its citation count keeps rising.
+          <div style="margin-top:12px; font-size:12px; color:var(--mw-gray-500);"><strong>Owner:</strong> Destination digital team, with Meltwater content QA</div>
+        </div>
+      </div>
+
+      <div style="display:flex; flex-direction:column; align-items:center;">
+        <div style="width:48px; height:48px; border-radius:50%; background:var(--mw-orange); color:#fff; display:flex; align-items:center; justify-content:center; font-size:18px; font-weight:800;">3</div>
+        <div style="width:2px; flex:1; background:transparent;"></div>
+      </div>
+      <div style="padding:8px 0 8px 12px;">
+        <div style="font-size:13px; font-weight:700; letter-spacing:1.5px; text-transform:uppercase; color:var(--mw-orange); margin-bottom:4px;">Weeks 4–8 — The Google Surface Play</div>
+        <div style="font-size:17px; font-weight:800; color:var(--mw-gray-900); margin-bottom:10px;">Build a dedicated approach for Google AI Mode &amp; AI Overviews</div>
+        <div style="background:#FFEFEA; border-radius:var(--radius); padding:20px; font-size:14px; line-height:1.8;">
+          Treat Google's two AI surfaces as their own ecosystem — engage or monitor the OTA/airline/review-platform partners (Tripadvisor, Expedia, Klook, airline partners) that already dominate there, since they behave structurally differently from Deepseek, GPT-5 and Sonar. Separately, evaluate why Singapore Airlines and the Tourism Board are named so rarely by name, and pursue placements that name them directly.
+          <div style="margin-top:12px; font-size:12px; color:var(--mw-gray-500);"><strong>Owner:</strong> Destination digital team &amp; partnerships</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="report-footer">
+  <div class="container">
+    AI Visibility &amp; Perception Report · <strong>Singapore as a Travel Destination</strong> · 7 Jun – 6 Jul 2026 · Powered by Meltwater GenAI Lens
+  </div>
+</div>
+
+<script>
+function initCharts() {
+if (typeof Chart === 'undefined') {
+  console.error('Chart.js failed to load from both CDNs — charts will not render, but the rest of the report is unaffected.');
+  document.querySelectorAll('canvas').forEach(function(cv){
+    var p = document.createElement('div');
+    p.style.cssText = 'font-size:12px;color:#9CA3AF;text-align:center;padding:20px;';
+    p.textContent = 'Chart could not load (no network access to chart library).';
+    cv.parentNode.insertBefore(p, cv);
+    cv.remove();
+  });
+  return;
+}
+// Radar: entity visibility by model (heatmap)
+new Chart(document.getElementById('radarChart'), {
+  type: 'radar',
+  data: {
+    labels: ['Deepseek','GPT-5','Google AI Mode','Google AI Overviews','Sonar'],
+    datasets: [
+      { label:'Virgin Atlantic', data:[0,0,36,49,0], borderColor:'#28BBBB', backgroundColor:'rgba(40,187,187,0.10)', borderWidth:2.5, pointRadius:4, pointBackgroundColor:'#28BBBB' },
+      { label:'Tripadvisor', data:[0,0,50,12,0], borderColor:'#6B3FA0', backgroundColor:'rgba(107,63,160,0.08)', borderWidth:2, pointRadius:4, pointBackgroundColor:'#6B3FA0' },
+      { label:'Marina Bay Sands', data:[14,15,18,0,6], borderColor:'#FF6221', backgroundColor:'rgba(255,98,33,0.08)', borderWidth:2, pointRadius:4, pointBackgroundColor:'#FF6221' },
+      { label:'ICA', data:[0,31,12,0,0], borderColor:'#B627A1', backgroundColor:'rgba(182,39,161,0.08)', borderWidth:2, pointRadius:4, pointBackgroundColor:'#B627A1' },
+      { label:'Singapore Zoo', data:[0,13,9,0,13], borderColor:'#9CA3AF', backgroundColor:'rgba(156,163,175,0.08)', borderWidth:2, pointRadius:4, pointBackgroundColor:'#9CA3AF' }
+    ]
+  },
+  options: {
+    responsive:true,
+    plugins:{ legend:{ position:'bottom', labels:{ font:{family:"'Plus Jakarta Sans'",size:11}, padding:14, usePointStyle:true } } },
+    scales:{ r:{ beginAtZero:true, max:50, ticks:{ stepSize:10, font:{size:10}, backdropColor:'transparent' }, grid:{ color:'rgba(0,0,0,0.06)' }, pointLabels:{ font:{family:"'Plus Jakarta Sans'",size:11,weight:'700'}, padding:8 } } }
+  }
+});
+
+// Trend line: mentions over time for 5 entities
+new Chart(document.getElementById('trendChart'), {
+  type:'line',
+  data:{
+    labels:['Jun 7','Jun 9','Jun 11','Jun 13','Jun 15','Jun 17','Jun 19','Jun 21','Jun 23','Jun 25','Jun 27','Jun 29','Jul 1','Jul 3','Jul 5'],
+    datasets:[
+      { label:'Tripadvisor', data:[8,0,8,2,3,2,0,0,1,0,0,0,0,0,0], borderColor:'#6B3FA0', backgroundColor:'transparent', tension:0.3, borderWidth:2 },
+      { label:'Virgin Atlantic', data:[1,2,6,4,5,3,1,0,1,0,0,0,0,0,0], borderColor:'#28BBBB', backgroundColor:'transparent', tension:0.3, borderWidth:2 },
+      { label:'ICA', data:[1,0,0,0,0,0,3,2,1,1,0,1,2,0,2], borderColor:'#B627A1', backgroundColor:'transparent', tension:0.3, borderWidth:2 },
+      { label:'Marina Bay Sands', data:[5,2,0,3,0,0,0,0,0,1,0,0,0,0,0], borderColor:'#FF6221', backgroundColor:'transparent', tension:0.3, borderWidth:2 },
+      { label:'visitsingapore.com', data:[4,0,0,0,0,0,0,0,0,4,0,0,0,0,1], borderColor:'#111827', backgroundColor:'transparent', tension:0.3, borderWidth:2.5 }
+    ]
+  },
+  options:{
+    responsive:true,
+    plugins:{ legend:{ position:'bottom', labels:{ font:{family:"'Plus Jakarta Sans'",size:11}, padding:14, usePointStyle:true } },
+      title:{ display:true, text:'Daily mentions, 5 tracked entities (7 Jun – 5 Jul 2026)', font:{family:"'Plus Jakarta Sans'",size:13,weight:'700'}, padding:{bottom:12} } },
+    scales:{ x:{ grid:{display:false}, ticks:{font:{size:10}} }, y:{ beginAtZero:true, grid:{color:'rgba(0,0,0,0.04)'}, ticks:{font:{size:10}} } }
+  }
+});
+
+// Mention vs Citation gap (visitsingapore.com) per model
+new Chart(document.getElementById('gapChart'), {
+  type:'bar',
+  data:{
+    labels:['Deepseek','ChatGPT','Google AI Mode','Google AI Overviews','Perplexity'],
+    datasets:[
+      { label:'Any citation %', data:[0,97,100,100,70], backgroundColor:'rgba(40,187,187,0.7)', borderRadius:4, barPercentage:0.7, categoryPercentage:0.8 },
+      { label:'visitsingapore.com citation %', data:[0,70,8,18,0], backgroundColor:'rgba(182,39,161,0.7)', borderRadius:4, barPercentage:0.7, categoryPercentage:0.8 }
+    ]
+  },
+  options:{
+    responsive:true,
+    plugins:{ legend:{ position:'bottom', labels:{ font:{family:"'Plus Jakarta Sans'",size:12}, padding:16, usePointStyle:true } },
+      title:{ display:true, text:'Any citation vs. visitsingapore.com citation, by model', font:{family:"'Plus Jakarta Sans'",size:14,weight:'700'}, padding:{bottom:16} } },
+    scales:{ x:{ grid:{display:false}, ticks:{ font:{family:"'Plus Jakarta Sans'",size:10,weight:'600'} } }, y:{ max:100, grid:{color:'rgba(0,0,0,0.04)'}, ticks:{font:{size:11}} } }
+  }
+});
+
+// Perception sentiment donut
+new Chart(document.getElementById('perceptionChart'), {
+  type:'doughnut',
+  data:{
+    labels:['Positive','Neutral'],
+    datasets:[{ data:[79,21], backgroundColor:['#10B981','#9CA3AF'], borderWidth:2, borderColor:'#fff' }]
+  },
+  options:{
+    responsive:true, cutout:'60%',
+    plugins:{
+      legend:{ position:'bottom', labels:{ font:{family:"'Plus Jakarta Sans'",size:12}, usePointStyle:true } },
+      title:{ display:true, text:'Sentiment split — Singapore travel prompts (125 responses)', font:{family:"'Plus Jakarta Sans'",size:13,weight:'700'}, padding:{bottom:12} },
+      tooltip:{ callbacks:{ label: c => c.label + ': ' + c.parsed + '%' } }
+    }
+  }
+});
+
+// Narrative ownership chart
+new Chart(document.getElementById('narrativeChart'), {
+  type:'bar',
+  data:{
+    labels:['google.com','youtube.com','visitsingapore.com','instagram.com','facebook.com','tripadvisor.com','wikipedia.org','expedia.com','neverendingvoyage.com','handluggageonly.co.uk','ica.gov.sg','virginatlantic.com'],
+    datasets:[{
+      data:[220,115,63,51,50,44,44,37,37,34,22,22],
+      backgroundColor: c => c.dataIndex===2 ? '#28BBBB' : '#B627A1',
+      borderRadius:6, maxBarThickness:20
+    }]
+  },
+  options:{
+    indexAxis:'y',
+    plugins:{ legend:{display:false} },
+    scales:{ x:{ grid:{color:'rgba(0,0,0,0.06)'} }, y:{ grid:{display:false}, ticks:{font:{size:11}} } }
+  }
+});
+
+// Entity presence per model (top 5 heatmap entities)
+const sovColors = ['#28BBBB','#6B3FA0','#FF6221','#B627A1','#9CA3AF'];
+const sovLabels = ['Virgin Atlantic','Tripadvisor','Marina Bay Sands','ICA','Singapore Zoo'];
+function createSovChart(canvasId, data) {
+  new Chart(document.getElementById(canvasId), {
+    type:'doughnut',
+    data:{ labels:sovLabels, datasets:[{ data:data, backgroundColor:sovColors, borderWidth:2, borderColor:'#fff' }] },
+    options:{ responsive:true, cutout:'55%',
+      plugins:{ legend:{display:false}, tooltip:{ callbacks:{ label: c => c.label + ': ' + c.parsed } } } }
+  });
+}
+// order: Virgin Atlantic, Tripadvisor, Marina Bay Sands, ICA, Singapore Zoo
+createSovChart('sovDeepseek', [0,0,14,0,0]);
+createSovChart('sovGPT5',     [0,0,15,31,13]);
+createSovChart('sovAIMode',   [36,50,18,12,9]);
+createSovChart('sovAIO',      [49,12,0,0,0]);
+createSovChart('sovSonar',    [0,0,6,0,13]);
+} // end initCharts
+
+if (document.readyState === 'complete') {
+  initCharts();
+} else {
+  window.addEventListener('load', initCharts);
+}
+
+// Sticky nav: show after scrolling past hero, highlight active section
+(function() {
+  const nav = document.getElementById('stickyNav');
+  const links = nav.querySelectorAll('a');
+  const sections = Array.from(links).map(a => document.querySelector(a.getAttribute('href')));
+  let ticking = false;
+  window.addEventListener('scroll', function() {
+    if (!ticking) {
+      requestAnimationFrame(function() {
+        const y = window.scrollY;
+        nav.classList.toggle('visible', y > 400);
+        let current = 0;
+        for (let i = sections.length - 1; i >= 0; i--) {
+          if (sections[i] && sections[i].offsetTop - 80 <= y) { current = i; break; }
+        }
+        links.forEach((a, i) => a.classList.toggle('active', i === current));
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+  links.forEach(a => {
+    a.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) window.scrollTo({ top: target.offsetTop - 48, behavior: 'smooth' });
+    });
+  });
+})();
+
+// Animate + Delight
+(function() {
+  requestAnimationFrame(() => document.querySelector('.hero').classList.add('loaded'));
+  document.querySelectorAll('.section > .container').forEach(c => c.classList.add('reveal'));
+  document.querySelectorAll('.kpi-row, .score-cards, .sov-grid, .card-grid, .theme-grid').forEach(g => g.classList.add('reveal-stagger'));
+  document.querySelectorAll('.sentiment-bar-fill').forEach(bar => {
+    bar.style.setProperty('--target-width', bar.style.width);
+    bar.style.width = '0%';
+  });
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        if (e.target.querySelector('.sentiment-bar-fill')) e.target.classList.add('sentiment-animated');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal, .reveal-stagger').forEach(el => io.observe(el));
+  const sentimentSection = document.getElementById('s07');
+  if (sentimentSection) {
+    const c = sentimentSection.querySelector('.container');
+    if (c) io.observe(c);
+  }
+  function animateCounters() {
+    document.querySelectorAll('.kpi-value').forEach(el => {
+      const text = el.textContent.trim();
+      const isPlain = !/^-?\d/.test(text);
+      if (isPlain) return;
+      const suffix = text.replace(/^-?[\d.]+/, '');
+      const target = parseFloat(text);
+      if (isNaN(target)) return;
+      const duration = 800;
+      const startTime = performance.now();
+      el.textContent = '0' + suffix;
+      function tick(now) {
+        const t = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 4);
+        const current = Math.round(target * eased);
+        el.textContent = current + suffix;
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  const kpiRow = document.querySelector('.kpi-row');
+  if (kpiRow) {
+    const kpiObs = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) { animateCounters(); kpiObs.disconnect(); }
+    }, { threshold: 0.3 });
+    kpiObs.observe(kpiRow);
+  }
+  function animateScores() {
+    document.querySelectorAll('.avg-score').forEach(el => {
+      const target = parseInt(el.textContent);
+      if (isNaN(target)) return;
+      const duration = 600;
+      const startTime = performance.now();
+      el.textContent = '0';
+      function tick(now) {
+        const t = Math.min((now - startTime) / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 4);
+        el.textContent = Math.round(target * eased);
+        if (t < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    });
+  }
+  const scoreCards = document.querySelector('.score-cards');
+  if (scoreCards) {
+    const scObs = new IntersectionObserver((entries) => {
+      if (entries[0].isIntersecting) { animateScores(); scObs.disconnect(); }
+    }, { threshold: 0.3 });
+    scObs.observe(scoreCards);
+  }
+})();
+</script>
+</body>
+</html>
